@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.co.sigma.android.mylayoutapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        android:scrollbarSize="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hotel"
+                    android:adjustViewBounds="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AA000000"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingBottom="8dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="32dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$74"
+                        android:textSize="24sp"
+                        android:textStyle="normal"
+                        android:textColor="@android:color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="per night"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/img_favourite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:minHeight="56dp"
+                    android:src="@drawable/ic_favorite"
+                    android:tint="@android:color/white"
+                    android:layout_gravity="right"
+                    android:layout_margin="24dp"/>
+
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The sunset room at Tangerang City"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp"
+                android:layout_margin="16dp"
+                android:gravity="center"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/metime"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Satriana"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/primary_text"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Situated in Tangerang City Center, Novotel Tangerang Hotel is the perfect place to experience Tangerang and its surroundings. Only 3.8 km from the city center, the hotel's strategic location ensures that guests can quickly and easily reach many local points of interest. With its convenient location, the hotel offers easy access to the city's must-see destinations.
+
+At Novotel Tangerang Hotel, every effort is made to make guests feel comfortable. To do so, the hotel provides the best in services and amenities. Top features of the hotel include free Wi-Fi in all rooms, 24-hour security, daily housekeeping, 24-hour front desk, Wi-Fi in public areas.
+
+Hotel accommodations have been carefully appointed to the highest degree of comfort and convenience. In some of the rooms, guests can find towels, television LCD/plasma screen, mirror, free welcome drink, internet access – wireless (complimentary). The hotel's recreational facilities, which include fitness center, outdoor pool, massage, kids club, pool (kids) are designed for escape and relaxation. When you are looking for comfortable and convenient accommodations in Tangerang, make Novotel Tangerang Hotel your home away from home."/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="DO you like it ? Give a Star!"/>
+                <com.like.LikeButton
+                    app:icon_type="star"
+                    app:icon_size="25dp"
+                    android:id="@+id/star_button"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_book"
+        android:background="@color/colorAccent"
+        android:textColor="@color/primary_text"
+        android:text="Request to Book"
+        android:textStyle="bold"/>
+
+</LinearLayout>
